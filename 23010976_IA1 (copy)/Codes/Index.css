@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0fff5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+#mySidenav a {
+    position: fixed; 
+    left: -180px; 
+    transition: 0.3s ease; 
+    padding: 15px 20px; 
+    width: 220px;
+    text-decoration: none;
+    font-size: 18px; 
+    color: white;
+    border-radius: 0 10px 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    align-items: center;
+}
+
+#mySidenav a:hover {
+    left: 0; 
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.1); 
+}
+
+#mySidenav a i {
+    margin-right: 10px;
+}
+
+#home { top: 20px; background-color: #04AA6D; }
+#personal { top: 80px; background-color: #2196F3; }
+#personality { top: 140px; background-color: #f44336; }
+#professional { top: 200px; background-color: #555; }
+#storyboard { top: 260px; background-color: #8E44AD; }
+#reference { top: 320px; background-color: #E67E22; }
+
+/* Header Styles */
+header {
+    background-color: #04AA6D;
+    color: white;
+    text-align: right;
+    padding: 1rem;
+}
+
+.logo a {
+    font-size: 28px;  
+    color: white;   
+    font-weight: bold;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #f0fff5; 
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#photo-div {
+    flex: 0 0 320px;
+}
+
+#photo-div img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #04AA6D;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+#intro-text {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+#intro-text h1 {
+    font-size: 3rem;
+    color: #04AA6D;
+    margin-bottom: 0.5rem;
+}
+
+#intro-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#intro-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#about, #cta {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+#about h2, #cta h2 {
+    color: #04AA6D;
+    margin-bottom: 1rem;
+}
+
+#about p, #cta p {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #038f5a;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #photo-div {
+        margin-bottom: 2rem;
+    }
+
+    #intro-text {
+        padding-left: 0;
+    }
+
+    #mySidenav a {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 180px;
+    }
+}
+

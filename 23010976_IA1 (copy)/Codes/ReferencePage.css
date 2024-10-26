@@ -1,0 +1,124 @@
+/* Style for the entire body */ 
+* {
+    background-color: #f7d7ba;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#mySidenav a {
+    position: fixed;
+    left: -200px; 
+    transition: 0.4s ease; 
+    padding: 15px 25px; 
+    width: 200px;
+    text-decoration: none;
+    font-size: 18px; 
+    color: white;
+    border-radius: 0 10px 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    align-items: center;
+}
+
+/* Hover effect */
+#mySidenav a:hover {
+    left: 0; 
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.1); 
+}
+
+#home {
+    top: 20px;
+    background-color: #04AA6D; /* Green */
+}
+
+#personal {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+}
+
+#personality {
+    top: 140px;
+    background-color: #f44336; /* Red */
+}
+
+#professional {
+    top: 200px;
+    background-color: #555; /* Light Black */
+}
+
+#storyboard {
+    top: 260px;
+    background-color: #8E44AD; /* Purple */
+}
+
+#reference {
+    top: 320px;
+    background-color: #E67E22; /* Orange */
+}
+
+.logo {
+  position: absolute;
+  top: 20px;  
+  right: 20px;
+}
+
+.logo a {
+  font-size: 28px;  
+  color: #2c3e50;   
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+.logo a:hover {
+  color: #e67e22; 
+}
+
+#heading { 
+  text-align: center;
+  z-index: -1;
+}
+
+#heading h1 {
+  font-size: 40px;  
+  color: #2c3e50;   
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.reference-list {
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+.reference-list h2 {
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+}
+.reference-entry {
+	margin-bottom: 15px;
+	padding-left: 36px;
+	text-indent: -36px;
+	line-height: 1.6;
+	background-color: #ffffff;
+}
+
+.reference-entry i {
+	background-color: #ffffff;
+}
+
+.reference-entry a {
+	background-color: #ffffff;
+}
+

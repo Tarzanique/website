@@ -1,0 +1,155 @@
+/* Style for the entire body */ 
+* {
+    background-color: #fabcb7;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#mySidenav a {
+    position: fixed;
+    left: -200px; 
+    transition: 0.4s ease; 
+    padding: 15px 25px; 
+    width: 200px;
+    text-decoration: none;
+    font-size: 18px; 
+    color: white;
+    border-radius: 0 10px 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    align-items: center;
+}
+
+/* Hover effect */
+#mySidenav a:hover {
+    left: 0; 
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.1); 
+}
+
+#home {
+    top: 20px;
+    background-color: #04AA6D; /* Green */
+}
+
+#personal {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+}
+
+#personality {
+    top: 140px;
+    background-color: #f44336; /* Red */
+}
+
+#professional {
+    top: 200px;
+    background-color: #555; /* Light Black */
+}
+
+#storyboard {
+    top: 260px;
+    background-color: #8E44AD; /* Purple */
+}
+
+#reference {
+    top: 320px;
+    background-color: #E67E22; /* Orange */
+}
+
+#heading { 
+  text-align: center;
+  z-index: -1;
+}
+
+#heading h1 {
+  font-size: 40px;  
+  color: #2c3e50;   
+  font-weight: bold;
+  text-decoration: none;
+}
+	
+.logo {
+  position: absolute;
+  top: 20px;  
+  right: 20px;
+}
+
+.logo a {
+  font-size: 28px;  
+  color: #2c3e50;   
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+.logo a:hover {
+  color: #e67e22; 
+}
+
+#quote-pic {
+	position: absolute;
+	left: 60px;
+	top: 70px;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	z-index: -1;
+}
+
+#quote-pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	z-index: -1;
+}
+
+#quote {
+	position: absolute;
+	left: 400px;
+	top: 100px;
+}
+
+#quote p {
+	font-size: 28px;
+}
+
+#explanation {
+	position: absolute;
+	left: 60px;
+	top: 380px;
+}
+
+#traits {
+	position: absolute;
+	left: 60px;
+	top: 850px;
+	z-index: -1;
+}
+
+#traits .head {
+	text-align: center;
+	font-size: 45px;
+}
+
+#test {
+	position: absolute;
+	top: 1800px;
+	left: 60px;
+	z-index: -1;
+}
+
+#test img {
+	border-radius: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+	
+
+
+
